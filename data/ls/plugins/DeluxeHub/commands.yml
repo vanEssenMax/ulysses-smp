@@ -14,6 +14,13 @@ custom_commands:
     actions:
       - '[CONSOLE] minecraft:clear %player%'
       - '[MESSAGE] &dDeluxeHub &eYour inventory has been cleared!'
+  discord:
+    # Players will require this permission to execute this command.
+    permission: deluxehub.discord
+    aliases:
+      - disc
+    actions:
+      - '[MESSAGE] Here is the link to our discord server...'
 
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
 # | DELUXEHUB COMMANDS                       |

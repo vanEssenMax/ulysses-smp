@@ -135,7 +135,7 @@ announcements:
   enabled: true
 
   # Delay to send announcements (in seconds)
-  delay: 60
+  delay: 320
 
   # How many players should be required to send announcements?
   required_players: 1
@@ -217,7 +217,7 @@ command_block:
 
 anti_swear:
   # Should the anti-swear feature be enabled?
-  enabled: true
+  enabled: false
 
   # List of words that will be blocked
   blocked_words:
@@ -266,8 +266,8 @@ join_leave_messages:
   enabled: true
 
   # Set to '' if you want silent join/quit messages
-  join_message: "&2&l+ &6%player% &7Joined"
-  quit_message: "&4&l- &6%player% &7Left"
+  join_message: "&2&l+ &6%player% &7connected"
+  quit_message: "&4&l- &6%player% &7disconnected"
 
 # Actions executed upon join
 join_events:

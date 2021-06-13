@@ -53,16 +53,12 @@ items:
     slot: 11
     amount: 1
     glow: true
-    display_name: '&eFactions'
+    display_name: '&eMinigames'
     lore:
-      - '&7Join now!'
-      - '&aPlaceholderAPI support!'
+      - '&aComing soon!'
     actions:
       - '[CLOSE]'
-      - '[MESSAGE] &7Sending you to: &eFactions'
-      - '[BUNGEE] factions'
-      # For multi-world servers using Multiverse-Core, use the action:
-      # - '[CONSOLE] mvtp %player% world'
+      - '[MESSAGE] &7This server is coming soon, stay tuned for more information. Or join our discord by typing /discord'
   survival:
     material: GRASS_BLOCK
     slot: 15
