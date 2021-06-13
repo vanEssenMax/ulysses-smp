@@ -30,6 +30,6 @@ services:
     ports:
       - 25565:25577
     volumes:
-      - ./data/bungeecord:/server
+      - ./data/bc:/server
       - ./config.yml:/config/config.yml
     restart: always
