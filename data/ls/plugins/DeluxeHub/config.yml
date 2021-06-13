@@ -77,7 +77,7 @@ anti_wdl:
 
 scoreboard:
   # Should the scoreboard feature be enabled?
-  enabled: true
+  enabled: false
 
   # Should we delay showing the scoreboard?
   # Value in ticks (20 ticks = 1 second), 0 to disable
@@ -106,7 +106,7 @@ scoreboard:
 
 tablist:
   # Should the tablist feature be enabled?
-  enabled: true
+  enabled: false
 
   # Should we refresh the tablist (update placeholders)?
   refresh:
@@ -150,18 +150,8 @@ announcements:
   announcements:
     test1:
       - "&r"
-      - "<center>&e&lANNOUNCEMENT</center>"
-      - "<center>&7Rate this plugin 5 stars on Spigot!</center>"
-      - "&r"
-    test2:
-      - "&r"
-      - "<center>&e&lANNOUNCEMENT</center>"
-      - "<center>&7This plugin was created by &eItsLewizzz</center>"
-      - "&r"
-    test3:
-      - "&r"
-      - "<center>&e&lANNOUNCEMENT</center>"
-      - "<center>&7Configure these messages in the &bconfig.yml</center>"
+      - "<center>&e&lALPHA NOTICE</center>"
+      - "<center>&7This server is still in Alpha!</center>"
       - "&r"
 
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
@@ -276,25 +266,11 @@ join_leave_messages:
   enabled: true
 
   # Set to '' if you want silent join/quit messages
-  join_message: "&2&l+ &6%player% &7Connected"
-  quit_message: "&4&l- &6%player% &7Disconnected"
+  join_message: "&2&l+ &6%player% &7Joined"
+  quit_message: "&4&l- &6%player% &7Left"
 
 # Actions executed upon join
 join_events:
-  - "[MESSAGE] &8&m+---------------***---------------+"
-  - "[MESSAGE] &r"
-  - "[MESSAGE] &r    &7Welcome, &b&n%player%&r &7to the server"
-  - "[MESSAGE] &r"
-  - "[MESSAGE] &r  &2&lWEBSITE &fwww.examplemc.net"
-  - "[MESSAGE] &r  &3&lSTORE &fstore.examplemc.net"
-  - "[MESSAGE] &r  &9&lDISCORD &fdiscord.examplemc.net"
-  - "[MESSAGE] &r"
-  - "[MESSAGE] &r            &7&oPowered By DeluxeHub"
-  - "[MESSAGE] &8&m+---------------***---------------+"
-  - "[TITLE] &b&lWELCOME;&f%player%;1;2;1"
-  - "[SOUND] ENTITY_PLAYER_LEVELUP"
-  - "[GAMEMODE] survival"
-  - "[EFFECT] SPEED;1"
 
 join_settings:
   # Should we teleport the player to the spawn point (if set) on join?
@@ -329,21 +305,6 @@ custom_join_items:
   disable_inventory_movement: true
 
   items:
-    infobook:
-      material: BOOK
-      amount: 1
-      slot: 0
-      display_name: "&dServer Information"
-      lore:
-        - "&7Right-click to see information about the server!"
-      actions:
-        - "[MESSAGE] &r"
-        - "[MESSAGE] &e&lServer Information"
-        - "[MESSAGE] &r"
-        - "[MESSAGE] &bWebsite: &fwww.examplemc.net"
-        - "[MESSAGE] &cStore: &fbuy.examplemc.net"
-        - "[MESSAGE] &dDiscord: &fdiscord.examplemc.net"
-        - "[MESSAGE] &r"
     server_selector:
       material: NETHER_STAR
       amount: 1

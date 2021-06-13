@@ -6,13 +6,6 @@
 custom_commands:
 
   # Command name, this will be used as the main command
-  website:
-    # List any aliases for the command here
-    aliases:
-      - web
-    # Actions to be executed
-    actions:
-      - '[MESSAGE] &bWebsite: &fwww.examplemc.net'
   clearinventory:
     # Players will require this permission to execute this command.
     permission: deluxehub.clearinventory

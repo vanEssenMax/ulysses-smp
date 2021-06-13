@@ -68,11 +68,11 @@ items:
     slot: 15
     amount: 1
     glow: false
-    display_name: '&aSurvival'
+    display_name: '&bUlysses &3&lSMP'
     lore:
-      - '&7Join now!'
-      - '&aMulti lore support too!'
+      - '&7Invite Only'
+      - '&aNo Mods, No Plugins, Just Vanilla'
     actions:
       - '[CLOSE]'
-      - '[MESSAGE] &7Sending you to: &eSurvival'
+      - '[MESSAGE] &7Sending you to: &bUlysses &3&lSMP - Invite Only'
       - '[BUNGEE] survival'
