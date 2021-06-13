@@ -1,0 +1,32 @@
+lastAccountName: ItsJotaroKujo
+timestamps:
+  login: 1623537378062
+  logout: 1623541133985
+  lastteleport: 0
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+ipAddress: 192.168.144.2
+logoutlocation:
+  world: 3c09f181-46a2-4426-a2b7-3bbafe98212c
+  x: -70.24623791154346
+  y: 50.0
+  z: -10.827683668296725
+  yaw: 91.88720703125
+  pitch: 23.0999755859375
+money: '0'
+teleportenabled: true
+teleportauto: false
+godmode: false
+muted: false
+jailed: false
+ip-address: 192.168.208.2
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+last-account-name: ItsJotaroKujo
+nickname: Nisin
