@@ -21,6 +21,12 @@ custom_commands:
       - disc
     actions:
       - '[MESSAGE] Here is the link to our discord server...'
+  sendtosurvival:
+    # Players will require this permission to execute this command.
+    permission: deluxehub.sendtosurvival
+    actions:
+      - '[MESSAGE] &7Sending you to: &bUlysses &3&lSMP - Invite Only'
+      - '[BUNGEE] survival'
 
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
 # | DELUXEHUB COMMANDS                       |

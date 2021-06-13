@@ -70,5 +70,4 @@ items:
       - '&aNo Mods, No Plugins, Just Vanilla'
     actions:
       - '[CLOSE]'
-      - '[MESSAGE] &7Sending you to: &bUlysses &3&lSMP - Invite Only'
-      - '[BUNGEE] survival'
+      - '[COMMAND] sendtosurvival'
