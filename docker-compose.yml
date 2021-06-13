@@ -1,0 +1,35 @@
+version: '3.5'
+
+services:
+  ls:
+    image: itzg/minecraft-server
+    environment:
+      EULA: "TRUE"
+      TYPE: "SPIGOT"
+      MEMORY: "2G"
+      ONLINE_MODE: "FALSE"
+      OPS: "ItsJotaroKujo"
+    volumes:
+      - ./data/ls:/data
+    restart: always
+  ms:
+    image: itzg/minecraft-server
+    environment:
+      EULA: "TRUE"
+      MEMORY: "3G"
+      ONLINE_MODE: "FALSE"
+      OPS: "ItsJotaroKujo"
+    volumes:
+      - ./data/smp:/data
+    restart: always
+  bungeecord:
+    image: itzg/bungeecord
+    environment:
+      BUNGEE_JAR_REVISION: "1"
+      ENABLE_RCON: "TRUE"
+    ports:
+      - 25565:25577
+    volumes:
+      - ./data/bungeecord:/server
+      - ./config.yml:/config/config.yml
+    restart: always

@@ -1,0 +1,56 @@
+connection_throttle: 4000
+prevent_proxy_connections: false
+remote_ping_timeout: 5000
+groups:
+  md_5:
+  - admin
+  ItsJotaroKujo:
+  - admin
+servers:
+  lobby:
+    address: ls:25565
+    restricted: false
+    motd: '&1Just another BungeeCord - Forced Host'
+  survival:
+    address: ms:25565
+    restricted: true
+    motd: '&1Survival'
+remote_ping_cache: -1
+connection_throttle_limit: 3
+online_mode: true
+ip_forward: false
+forge_support: false
+player_limit: -1
+disabled_commands:
+- disabledcommandhere
+log_pings: true
+log_commands: false
+stats: 19659f49-ed6b-47e3-8b81-63bd14ade63a
+listeners:
+- motd: '&bUlysses &3&lSMP &r- 1.17 [Coming Soon]'
+  priorities:
+  - lobby
+  host: 0.0.0.0:25577
+  max_players: 42
+  force_default_server: false
+  tab_size: 60
+  forced_hosts:
+    pvp.md-5.net: pvp
+  tab_list: GLOBAL_PING
+  bind_local_address: true
+  ping_passthrough: false
+  query_enabled: false
+  query_port: 25577
+  proxy_protocol: false
+network_compression_threshold: 256
+permissions:
+  default:
+  - bungeecord.command.server
+  - bungeecord.command.list
+  admin:
+  - bungeecord.command.alert
+  - bungeecord.command.end
+  - bungeecord.command.ip
+  - bungeecord.command.reload
+timeout: 30000
+server_connect_timeout: 5000
