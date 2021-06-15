@@ -20,6 +20,8 @@ services:
       MEMORY: "3G"
       ONLINE_MODE: "FALSE"
       OPS: "ItsJotaroKujo"
+    ports:
+      - 25555:8123
     volumes:
       - ./data/smp:/data
     restart: always
