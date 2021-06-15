@@ -18,7 +18,7 @@ servers:
 remote_ping_cache: -1
 connection_throttle_limit: 3
 online_mode: true
-ip_forward: false
+ip_forward: true
 forge_support: false
 player_limit: -1
 disabled_commands:
