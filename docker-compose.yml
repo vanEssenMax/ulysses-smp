@@ -17,7 +17,7 @@ services:
     environment:
       EULA: "TRUE"
       TYPE: "SPIGOT"
-      MEMORY: "3G"
+      MEMORY: "10G"
       ONLINE_MODE: "FALSE"
       OPS: "ItsJotaroKujo"
     ports:
