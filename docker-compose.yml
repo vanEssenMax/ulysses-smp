@@ -11,6 +11,8 @@ services:
       OPS: "ItsJotaroKujo"
     volumes:
       - ./data/ls:/data
+    ports:
+      - 25556:25556/udp
     restart: always
   ms:
     image: itzg/minecraft-server
