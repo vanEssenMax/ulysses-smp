@@ -16,6 +16,7 @@ services:
     image: itzg/minecraft-server
     environment:
       EULA: "TRUE"
+      TYPE: "SPIGOT"
       MEMORY: "3G"
       ONLINE_MODE: "FALSE"
       OPS: "ItsJotaroKujo"
