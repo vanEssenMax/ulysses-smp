@@ -22,7 +22,7 @@ services:
       OPS: "ItsJotaroKujo"
     ports:
       - 25555:8123
-      - 25556:25556
+      - 25556:25556/udp
     volumes:
       - ./data/smp:/data
     restart: always
