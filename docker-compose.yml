@@ -17,7 +17,7 @@ services:
     environment:
       EULA: "TRUE"
       TYPE: "SPIGOT"
-      MEMORY: "10G"
+      MEMORY: "5G"
       ONLINE_MODE: "FALSE"
       OPS: "ItsJotaroKujo"
     ports:
@@ -25,6 +25,20 @@ services:
       - 25556:25556/udp
     volumes:
       - ./data/smp:/data
+    restart: always
+  smp:
+    image: itzg/minecraft-server
+    environment:
+      EULA: "TRUE"
+      TYPE: "FABRIC"
+      MEMORY: "5G"
+      ONLINE_MODE: "FALSE"
+      OPS: "ItsJotaroKujo"
+    ports:
+      - 25555:8123
+      - 25556:24454/udp
+    volumes:
+      - ./data/fabricsmp:/data
     restart: always
   bungeecord:
     image: itzg/bungeecord
