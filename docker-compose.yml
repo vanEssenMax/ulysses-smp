@@ -21,7 +21,6 @@ services:
       ONLINE_MODE: "FALSE"
       OPS: "ItsJotaroKujo"
     ports:
-      - 25555:8123
       - 25556:25556/udp
     volumes:
       - ./data/smp:/data
@@ -35,6 +34,7 @@ services:
       ONLINE_MODE: "FALSE"
       OPS: "ItsJotaroKujo"
     ports:
+      - 25555:8123
       - 24454:24454/udp
     volumes:
       - ./data/fabricsmp:/data
