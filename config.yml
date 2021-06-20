@@ -11,10 +11,6 @@ servers:
     address: ls:25565
     restricted: false
     motd: '&bUlysses &3&lSMP &r- 1.17'
-  survival:
-    address: ms:25565
-    restricted: true
-    motd: '&bUlysses &3&lSMP &r- 1.17'
   smp:
     address: smp:25565
     restricted: true

@@ -12,25 +12,12 @@ services:
     volumes:
       - ./data/ls:/data
     restart: always
-  ms:
-    image: itzg/minecraft-server
-    environment:
-      EULA: "TRUE"
-      TYPE: "SPIGOT"
-      MEMORY: "5G"
-      ONLINE_MODE: "FALSE"
-      OPS: "ItsJotaroKujo"
-    ports:
-      - 25556:25556/udp
-    volumes:
-      - ./data/smp:/data
-    restart: always
   smp:
     image: itzg/minecraft-server
     environment:
       EULA: "TRUE"
       TYPE: "FABRIC"
-      MEMORY: "5G"
+      MEMORY: "10G"
       ONLINE_MODE: "FALSE"
       OPS: "ItsJotaroKujo"
     ports:
